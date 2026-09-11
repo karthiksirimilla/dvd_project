@@ -1,0 +1,15 @@
+area,finding,rows,share,treatment
+orders,order_approved_at missing,160,0.0016,Retained; excluded only from metrics that require the timestamp
+orders,order_delivered_carrier_date missing,1783,0.0179,Retained; excluded only from metrics that require the timestamp
+orders,order_delivered_customer_date missing,2965,0.0298,Retained; excluded only from metrics that require the timestamp
+orders,order_status not 'delivered',2963,0.0298,Excluded from the satisfaction model; kept for the funnel view
+orders,status='delivered' but no delivery date,8,0.0001,Dropped from delivery analysis: the outcome date is unknowable
+orders,lifecycle timestamps out of order,1382,0.0139,Order kept; the impossible stage duration is nulled so it cannot distort stage averages
+products,product_category_name missing,610,0.0185,Mapped to 'unknown' so the orders are not silently lost in joins
+products,categories missing English translation,2,,Fall back to the Portuguese name rather than dropping the row
+reviews,orders with more than one review,547,,Kept the earliest review per order
+reviews,review with no written comment,58247,0.587,Text analysis runs on the commented subset only; stated as a caveat
+geolocation,coordinates outside Brazil bounding box,47,0.0,Clipped before taking the median coordinate per zip prefix
+payments,orders with no payment row,1,0.0,Payment fields left null; order retained
+marketing,closed deals whose seller never transacted,462,0.5487,Funnel analysis scoped to matched sellers; gap reported as a limitation
+order_items,price <= 0,0,,None found

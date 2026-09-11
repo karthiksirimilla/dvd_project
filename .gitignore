@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Source data. The raw CSVs are ~120 MB and the DuckDB build is ~116 MB.
+Project Dataset/
+*.zip
+
+# Everything under data/ is generated, except the one parquet the hosted
+# dashboard needs to start. It cannot be rebuilt on the server.
+dashboard/data/*
+!dashboard/data/processed/
+dashboard/data/processed/*
+!dashboard/data/processed/order_facts.parquet
+
+# macOS
+.DS_Store

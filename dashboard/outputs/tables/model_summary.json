@@ -1,0 +1,32 @@
+[
+  {
+    "model": "post_hoc (includes realised delivery)",
+    "n_train": 71670,
+    "n_test": 23890,
+    "cutoff": "2018-05-06 13:07:46",
+    "test_bad_rate": 0.09983256592716618,
+    "roc_auc": 0.7314153551146264,
+    "pr_auc": 0.3429123614397772,
+    "pr_auc_baseline": 0.09983256592716618,
+    "brier": 0.07784190868531292,
+    "brier_baseline": 0.0912622205370572,
+    "detractor_capture_top5pct": 0.259958071278826,
+    "detractor_capture_top10pct": 0.37777777777777777,
+    "detractor_capture_top20pct": 0.5119496855345912
+  },
+  {
+    "model": "at_risk (checkout-time features only)",
+    "n_train": 71670,
+    "n_test": 23890,
+    "cutoff": "2018-05-06 13:07:46",
+    "test_bad_rate": 0.09983256592716618,
+    "roc_auc": 0.6337059442565403,
+    "pr_auc": 0.17735100526348996,
+    "pr_auc_baseline": 0.09983256592716618,
+    "brier": 0.0917617997399101,
+    "brier_baseline": 0.0912622205370572,
+    "detractor_capture_top5pct": 0.13626834381551362,
+    "detractor_capture_top10pct": 0.22138364779874214,
+    "detractor_capture_top20pct": 0.35052410901467507
+  }
+]

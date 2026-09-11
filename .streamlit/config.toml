@@ -1,0 +1,18 @@
+# Theme for the hosted deployment. Streamlit reads .streamlit/config.toml
+# relative to the working directory, and Streamlit Community Cloud runs
+# from the repository root, so this has to sit here as well as in
+# dashboard/. Keep the two in step.
+
+[theme]
+base = "light"
+primaryColor = "#e8833a"          # accent - matches PALETTE["accent"]
+backgroundColor = "#ffffff"       # matches PALETTE["bg"]
+secondaryBackgroundColor = "#f2f4f8"
+textColor = "#2b3245"
+font = "sans serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

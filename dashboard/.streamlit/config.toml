@@ -1,0 +1,17 @@
+# Matches the palette in src/config.py so sliders, tabs, checkboxes and
+# buttons pick up the same brand instead of Streamlit's stock red. Keep
+# these two files in sync if the palette ever changes.
+
+[theme]
+base = "light"
+primaryColor = "#e8833a"          # accent - matches PALETTE["accent"]
+backgroundColor = "#ffffff"       # matches PALETTE["bg"]
+secondaryBackgroundColor = "#f2f4f8"
+textColor = "#2b3245"
+font = "sans serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

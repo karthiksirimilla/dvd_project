@@ -1,0 +1,6 @@
+scenario,detractors_avoided,detractors_avoided_pct,orders_lost,gmv_lost,gmv_lost_pct,late_rate_after,net_value,notes
+Do nothing,0.0,0.0,0,0.0,0.0,0.0801381331100879,0.0,"Current state, for reference"
+Fix the worst lanes,834.6616279301306,0.061249879591735744,0,0.0,0.0,0.06423189619087484,114149.93765866222,25% faster transit on lanes with a late rate above 10%
+Remove the worst sellers,399.99399621989323,0.029352714065269715,2295,412199.61,0.03154032796058871,0.07867903286334638,-357495.6578780245,Delist sellers with 30+ orders averaging under 3.5 stars
+Tighten the promise by 3 days,-1639.4983864964197,-0.12031112417708605,0,0.0,0.0,0.12934282126412724,-224220.96853086646,Quote a 3-day shorter ETA with no operational change
+Combined programme,355.3340800591577,0.02607544050208269,2295,412199.61,0.03154032796058871,0.09143837452420522,-363603.4343409623,"Logistics investment, seller cleanup, and a modest promise tightening funded by the faster network"

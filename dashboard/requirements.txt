@@ -1,0 +1,21 @@
+# Core analysis
+pandas>=2.2
+numpy>=1.26
+duckdb>=1.0
+pyarrow>=15.0
+
+# Modelling
+scikit-learn>=1.4
+
+# Visualisation
+plotly>=5.20
+kaleido>=1.0          # static PNG export; needs a Chrome binary
+
+# Dashboard
+streamlit>=1.40
+
+# Notebooks and tests
+jupyter>=1.0
+nbformat>=5.9
+nbclient>=0.9
+pytest>=8.0
